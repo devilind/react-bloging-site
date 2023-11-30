@@ -1,12 +1,4 @@
-.body{
-    /* background-image: url(https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg); */
-    background-image: linear-gradient(to bottom right, #22092C, #872341);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: lighten;
-    color: white;    
-    opacity: 0.9;
-}
+
 .center {
     text-align: center;
     /* border: 3px solid green; */

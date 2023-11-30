@@ -1,18 +1,11 @@
 import React from 'react';
-import './homepage.css'
-import Header from '../../common/Header';
-import Footer from '../../common/Footer';
+import './bloghomepage.css'
 import Content from './Content';
 
-export default function HomePage() {
+export default function BlogHomePage() {
   return (
     <>
-    <div class ='home-body'>
-    <div class='p-4'>
-      <Header/>
-    </div>
     <div>
-    <link rel='stylesheet' src='./blogbody.css'></link>
     <div class='container py-4'>
     <div class='title center'>
     <p class='fs-2 fw-bolder'>Latest Blogs</p>
@@ -24,11 +17,7 @@ export default function HomePage() {
     </div>
     </div>
     </div>
-    <div>
-      <Footer/>
-    </div>
-    </div>
-    
+  
     </>
   )
 }

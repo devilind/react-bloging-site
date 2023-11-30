@@ -1,0 +1,50 @@
+header {
+    /* background-color: #F05941; */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    /* background-color: #F05941;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: White;
+}
+
+section p {
+    color: white;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

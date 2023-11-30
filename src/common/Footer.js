@@ -1,27 +1,29 @@
 import React from 'react'
-import './common.css'
+import './footer.css'
 
 export default function Footer() {
     return (
         <>
-        
-        <br/>
-        <div class='line-seperator'></div>
-        
-            <div class=' p-3 d-flex justify-content-center'>
-                <div class='d-flex align-items-center gap-3 flex-column w-25'>
-            <p class='center fs-5 fw-bolder'>Any Message For Us?</p>
-                        <input type="text" class="form-control" placeholder='Enter Your Name'></input>
-                        
-                        <input type="text" class="form-control" placeholder='Enter Your Email'></input>
-                        
-                        <textarea class="form-control" rows="2" placeholder='Enter Your Message'></textarea>
-                        
-                        <button type='submit' class='button-38'>Send Message</button>
-                   
+            <br />
+            <div class='line-seperator'></div>
+            <div className='footer-box'>
+                <div class="company-info">
+                    <h3>KnowinGly</h3>
+                    <p>Mumbai, INDIA.</p>
+                    <p>Email: Knowingly@gmail.com</p>
+                </div>
+                <div class="social-icons">
+                    <a href="www.facebook.com" target="_blank">Facebook</a>
+                    <a href="www.twitter.com" target="_blank">Twitter</a>
+                    <a href="www.instagram.com" target="_blank">Instagram</a>
+                    {/* <!-- Add more social media icons as needed --> */}
                 </div>
             </div>
-            <div class='dark-strip'></div>
+            
+            <div class="footer">
+                <p>&copy; 2023 Knowingly Domain. All rights reserved.</p>
+            </div>
+
         </>
     );
 }
