@@ -41,9 +41,9 @@ export default function Header() {
             {/* <button className="dropbtn">Dropdown</button> */}
             <NavLink to='/blog' onClick={closeHamburger}><span >Blog</span></NavLink>
             <div className="dropdown-content">
-              <a href="/market"  onClick={closeHamburger}>Market</a>
-              <a href="/coding"  onClick={closeHamburger}>Coding</a>
-              <a href="/"  onClick={closeHamburger}>Sports</a>
+              <NavLink to="/market"  onClick={closeHamburger}>Market</NavLink>
+              <NavLink to="/coding"  onClick={closeHamburger}>Coding</NavLink>
+              <NavLink to="/sports"  onClick={closeHamburger}>Sports</NavLink>
             </div>
           </div>
           <NavLink to='/about'  onClick={closeHamburger}><span >About</span></NavLink>

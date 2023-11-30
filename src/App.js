@@ -6,6 +6,7 @@ import BlogBody from './pages/BlogPage/BlogBody.js';
 import Home from './pages/Home/Home.js';
 import ContactUs from './pages/ContactUs/ContactUs.js';
 import About from './pages/About/About.js';
+import NotFound from "./NotFound/NotFound.js";
 import '../src/App.css';
 import BlogHomePage from "./pages/Bloghome/BlogHomePage.js";
 
@@ -24,6 +25,8 @@ function App() {
         <Route path='/market'  element={<BlogBody />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<ContactUs />} />
+        <Route path='/*' element={<NotFound />} />
+        
       </Routes>
       <div>
         <Footer />
