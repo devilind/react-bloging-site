@@ -31,7 +31,7 @@
 
 .custom-card:hover {
     scale: 1;
-    box-shadow: 0 4px 8px 0 #F05941, 0 6px 20px 0 #F05941;
+    box-shadow: 0 4px 8px 0 #ffffff9e, 0 6px 20px 0 #ffffff5f;
     /* box-shadow: 1px 1px 5px 1px white; */
 
 }
