@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <div className='container'>
       <div className="custom-navbar">
-        <div class='web-icon-menu'>
+        <div className='web-icon-menu'>
           <div className="website-icon">
           <Link to='/'>
             <img src="knowingly.png" width="200"></img>

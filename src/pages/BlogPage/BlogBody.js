@@ -6,7 +6,7 @@ import Content from './Content';
 export default function BlogBody() {
   return (
     <>
-    <div class='container py-4'>
+    <div className='container py-4'>
     <div>
         <Content/>
     </div>

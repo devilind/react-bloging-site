@@ -9,14 +9,16 @@ import About from './pages/About/About.js';
 import NotFound from "./NotFound/NotFound.js";
 import '../src/App.css';
 import BlogHomePage from "./pages/Bloghome/BlogHomePage.js";
+// import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 function App() {
   
   return (
-    <body>
+    
     <div className='linear-gradient-bg'>
-      <div class='p-4'>
+      <div className='p-4'>
         <Header />
       </div>
       <Routes>
@@ -33,7 +35,7 @@ function App() {
       </div>
     </div>
 
-    </body>
+    
 
 
 

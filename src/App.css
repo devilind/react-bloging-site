@@ -36,3 +36,16 @@ body::-webkit-scrollbar-thumb {
   background-color: #933954;
   /* outline: 1px solid white; */
 }
+
+@media (max-width: 578px) {
+  .linear-gradient-bg {
+    
+    font-size: var(--cl-text-font-size, 1.05rem);
+    font-weight: var(--cl-text-font-weight, 300);
+    line-height: var(--cl-text-line-height, 1.5);
+    letter-spacing: 1.25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+}
