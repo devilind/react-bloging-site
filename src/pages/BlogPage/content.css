@@ -22,7 +22,6 @@
 
   .content-box {
     width: 60%;
-  
   }
 
 @media (max-width : 991px) {
@@ -48,6 +47,13 @@
       }
 
       .content-box ol{
+        padding: 0;
+        margin: 0;
+        padding-left: 0;
+      }
+
+      .content-box ol li{
+        padding: 0;
         margin: 0;
         padding-left: 0;
       }
@@ -56,5 +62,18 @@
         width: 80%;
         margin: 0px 5rem;
       }
+}
+
+@media (max-width : 767px) {
+  .content-box ol{
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .content-box {
+    width: 100%;
+    margin: 0;
+  }
 }
 

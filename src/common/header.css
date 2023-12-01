@@ -181,4 +181,7 @@
     .dropdown:hover .dropdown-content {
         display:inline;
     }
+    .dropdown-content a {
+        display: none;
+    }
 }
