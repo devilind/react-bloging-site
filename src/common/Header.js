@@ -17,7 +17,7 @@ export default function Header() {
    
   }
   return (
-    <div className='container'>
+    <div className='custom-container'>
       <div className="custom-navbar">
         <div className='web-icon-menu'>
           <div className="website-icon">
