@@ -9,6 +9,7 @@ var upload = multer({
 });
 
 router.get('/', function (req, res, next) {
+    console.log('wpasda')
     res.json({
         message: 'Knowingly API is up and ready to serve!!!'
     });

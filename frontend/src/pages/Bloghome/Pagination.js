@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Pagination({previous, next, limit, page, searchKey}) {
     let pages = []
     console.log(page)
-    const { status, error, data: blog } = useQuery({enabled: page != null, queryKey: [`allblogs`], queryFn: () => getBlogsPaginated() })
+    const { status, error, data: blog } = useQuery({ queryKey: [`allblogs`], queryFn: () => getBlogsPaginated() })
     if (status === 'loading') return (
         <div className='latest-blog-loader'>
             <PropagateLoader color='#F05941' loading={true} size={30} />

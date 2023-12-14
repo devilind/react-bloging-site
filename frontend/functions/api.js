@@ -5,12 +5,12 @@ const serverless = require('serverless-http');
 const app = express();
 const port = process.env.PORT || 3000;
 // const cors = require('cors')
-const blogRouter = require('../routers/blog');
-const subRouter = require('../routers/subscribe');
-const contactRouter = require('../routers/contact-us');
-const database = require('../database/connector');
+const blogRouter = require('../backend/routers/blog');
+const subRouter = require('../backend/routers/subscribe');
+const contactRouter = require('../backend/routers/contact-us');
+const database = require('../backend/database/connector');
 var bodyParser = require('body-parser');
-// var corsOptions = {
+
 //     origin: '',
 //     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 //   }
@@ -22,9 +22,9 @@ database()
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api/', blogRouter);
-app.use('/api/', subRouter);
-app.use('/api', contactRouter);
+// app.use('/api/', blogRouter);
+// app.use('/api/', subRouter);
+// app.use('/api', contactRouter);
 
 // app.listen(port, () => {
 //     console.log(`Listening on port: ${port}`);
