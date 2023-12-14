@@ -37,7 +37,7 @@ export default function Header() {
         {/* // 'navbar-urls'> */}
           <div className="search-container">
             <div className="search-box">
-            <input onChange={handleChange} value={searchKey} type="text" name="searchKey"  placeholder="Search..."></input></div>
+            <input autoComplete="off" onChange={handleChange} value={searchKey} type="text" name="searchKey"  placeholder="Search..."></input></div>
             <Link to={`/blogs/?page=1&limit=5&searchKey=${searchKey}`} onClick={closeHamburger}><div className="search-icon fa fa-search"></div></Link>
           </div>
           <div className="url-anchors"> 

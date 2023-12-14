@@ -73,6 +73,10 @@ a:hover {
     background-color: transparent;
 }
 
+.page-controller-btn:hover{
+    color: white;
+}
+
 
 
 .not-visible {
@@ -107,4 +111,9 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.current-page-btn:hover{
+    color: white;
+    cursor: default;
 }

@@ -23,7 +23,7 @@ function App() {
           <div className="page-body">
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/:blogs' element={<BlogHomePage />} />
+              <Route path='/blogs' element={<BlogHomePage />} />
               <Route path='/blog/:id' element={<BlogBody />} />
               <Route path='/about' element={<About />} />
               <Route path='/contact' element={<ContactUs />} />

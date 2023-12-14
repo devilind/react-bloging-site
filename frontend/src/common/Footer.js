@@ -28,7 +28,7 @@ export default function Footer() {
         }
         console.log(emailRef.current.value)
         try{
-            const response = await fetch('/subscribe', {
+            const response = await fetch('/.netlify/functions/api/subscribe', {
                 method: 'post',
                 headers: {
                     "Content-Type": "application/json",
