@@ -1,5 +1,7 @@
 import React from 'react'
 import './about.css';
+import logo from '../../lottie/KnowinGly-logo.png'
+import team from '../../lottie/team-image.jpg'
 
 export default function About() {
   return (
@@ -7,7 +9,7 @@ export default function About() {
 
     <header>
         <h1>About Knowingly</h1>
-        <img src="https://via.placeholder.com/150" alt="Company Logo"></img>
+        <img src={logo} width={200} alt="Company Logo"/>
     </header>
 
     <section>
@@ -38,7 +40,7 @@ export default function About() {
             bibendum, ac bibendum orci scelerisque. Curabitur laoreet ligula at nunc vehicula, vel consectetur metus
             ultrices.
         </p>
-        <img src="https://via.placeholder.com/600x300" alt="Team Photo"></img>
+        <img src={team} alt="Team Photo"></img>
 
         <h2>Join Us on the Journey</h2>
         <p>

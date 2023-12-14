@@ -1,20 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Hamburger from 'hamburger-react'
+import logo from '../lottie/knowingly.png'
 import './header.css'
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false)
+  const [searchKey , setSearchKey] = useState('')
   function handleHamburgerToggles() {
     let css1 = 'navbar-urls';
     if (isOpen) css1 = 'navbar-urls-open';
-    console.log(css1)
     return css1;
   }
-  
+  function handleChange(event) {
+    setSearchKey(event.target.value)
+  }
   function closeHamburger() {
     if (isOpen) setOpen(false);
-   
+    
   }
   return (
     <div className='custom-container'>
@@ -22,7 +25,7 @@ export default function Header() {
         <div className='web-icon-menu'>
           <div className="website-icon">
           <Link to='/'>
-            <img src="knowingly.png" width="200"></img>
+            <img src={logo} width="200"></img>
             </Link>
           </div>
           <div className="menu">
@@ -33,21 +36,22 @@ export default function Header() {
         <div className={handleHamburgerToggles()} >
         {/* // 'navbar-urls'> */}
           <div className="search-container">
-            <input type="text" className="search-box" placeholder="Search..."></input>
-            <div className="search-icon fa fa-search"></div>
+            <div className="search-box">
+            <input onChange={handleChange} value={searchKey} type="text" name="searchKey"  placeholder="Search..."></input></div>
+            <Link to={`/blogs/?page=1&limit=5&searchKey=${searchKey}`} onClick={closeHamburger}><div className="search-icon fa fa-search"></div></Link>
           </div>
           <div className="url-anchors"> 
-          <div className="dropdown">
+          {/* <div className="dropdown"> */}
             {/* <button className="dropbtn">Dropdown</button> */}
-            <NavLink to='/blog' onClick={closeHamburger}><span >Blog</span></NavLink>
-            <div className="dropdown-content">
+            <Link to='/blogs/?page=1&limit=5' onClick={closeHamburger}><span >Blog</span></Link>
+            {/* <div className="dropdown-content">
               <NavLink to="/market"  onClick={closeHamburger}>Market</NavLink>
               <NavLink to="/coding"  onClick={closeHamburger}>Coding</NavLink>
               <NavLink to="/sports"  onClick={closeHamburger}>Sports</NavLink>
             </div>
-          </div>
+          </div> */}
           <NavLink to='/about'  onClick={closeHamburger}><span >About</span></NavLink>
-          <NavLink to='/contact'  onClick={closeHamburger}><span >Contact Us</span></NavLink>
+          <NavLink to='/contact'  onClick={closeHamburger}><span >Contact</span></NavLink>
         </div>
         </div>
       </div>

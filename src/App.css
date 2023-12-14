@@ -1,4 +1,13 @@
 
+.spinner-loader{
+  background-image: linear-gradient(to bottom right, #872341, #22092C);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
 .linear-gradient-bg {
   font-family: 'Arial', sans-serif;
   /* background-image: url(https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg); */
@@ -15,6 +24,18 @@
   letter-spacing: 1.5px;
   margin: 0;
   padding: 0;
+}
+
+.p-4{
+  background-image: linear-gradient(to bottom right, #22092C, #872341);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.page-body{
+  padding-top: 115px;
 }
 
   body::-webkit-scrollbar {

@@ -33,17 +33,16 @@
 }
 
 .form-group button {
-    background-color: #872341;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    border: #F05941 1px solid;
+    padding: 5px 25px;
+    border-radius: 100px;
+    background-color: #F05941;
+    color: white;
 }
 
 .form-group button:hover {
-    background-color: #22092C;
+    background-color: white;
+    color: #F05941;
 }
 
 .content {
@@ -56,4 +55,44 @@
     background-blend-mode: lighten;
     color: white;    
     opacity: 0.9;
+}
+
+.response-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.lottie-right-tick{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.response-msg > h4{
+    font-weight: bold;
+    text-align: center;
+
+}
+.response-msg > h5{
+    margin-top: 50px;
+    text-align: center;
+
+}
+.response-msg > button{
+    border: #F05941 1px solid;
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color: #F05941;
+    color: white;
+    
+}
+.response-msg > button:hover{
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color: white;
+    color: #F05941;
 }

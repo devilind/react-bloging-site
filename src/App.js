@@ -11,28 +11,33 @@ import './App.css';
 import BlogHomePage from "./pages/Bloghome/BlogHomePage.js";
 import 'bootstrap/dist/css/bootstrap.css';
 
-
 function App() {
 
   return (
-    <body>
-      <div className='linear-gradient-bg'>
-        <div className='p-4'>
-          <Header />
+    
+      <div className="custom-body">
+        <div className='linear-gradient-bg'>
+          <div className='p-4'>
+            <Header />
+          </div>
+          <div className="page-body">
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/:blogs' element={<BlogHomePage />} />
+              <Route path='/blog/:id' element={<BlogBody />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/contact' element={<ContactUs />} />
+              <Route path='/*' element={<NotFound />} />
+            </Routes>
+          </div>
+          <div>
+            <Footer />
+          </div>
         </div>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/blog' element={<BlogHomePage />} />
-          <Route path='/market' element={<BlogBody />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<ContactUs />} />
-          <Route path='/*' element={<NotFound />} />
-        </Routes>
-        <div>
-          <Footer />
-        </div>
+
       </div>
-    </body>
+
+
   );
 }
 
