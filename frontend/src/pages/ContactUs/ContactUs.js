@@ -39,7 +39,7 @@ export default function ContactUs() {
             'message': mesageRef.current.value
         }
         try{
-            const response = await fetch('/contact-us', {
+            const response = await fetch('/.netlify/functions/api/contact-us', {
                 method: 'post',
                 headers: {
                     "Content-Type": "application/json",

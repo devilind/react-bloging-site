@@ -54,12 +54,12 @@
 .card-description span {
     text-align: center;
     font-size: 1rem;
-
+    line-height: 1rem;
 }
 
 .custom-card:hover {
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.02;
     text-decoration: none;
     color: white;
     box-shadow: 0 4px 8px 0 #ffffff9e, 0 6px 20px 0 #ffffff5f;
