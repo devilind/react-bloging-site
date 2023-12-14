@@ -1,0 +1,54 @@
+.read-btn{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #F05941;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+.image-box{
+    width: 450px;
+    height: 300px;
+    margin-bottom: 0;
+}
+
+.read-btn:hover{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.content-box > span{
+    font-size: 1.1rem;
+}
+.content-box-title{
+    font-size: 1.6rem;
+    margin: 10px 0px;
+}
+
+@media (max-width: 768px) {
+    .image-box{
+        width: 100%;
+    }
+
+    .content-box > span{
+        font-size: 1rem;
+    }
+
+    .content-box-title{
+        font-size: 1.1rem;
+        margin: 10px 0px;
+    }
+
+    .read-btn{
+        width: 170px;
+        font-size: .8rem;
+        padding: 10px 10px;
+    }
+}
