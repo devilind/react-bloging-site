@@ -5,10 +5,10 @@ const serverless = require('serverless-http');
 const app = express();
 const port = process.env.PORT || 3000;
 // const cors = require('cors')
-const blogRouter = require('./routers/blog');
-const subRouter = require('./routers/subscribe');
-const contactRouter = require('./routers/contact-us');
-const database = require('./database/connector');
+const blogRouter = require('../routers/blog');
+const subRouter = require('../routers/subscribe');
+const contactRouter = require('../routers/contact-us');
+const database = require('../database/connector');
 var bodyParser = require('body-parser');
 // var corsOptions = {
 //     origin: '',

@@ -4,7 +4,7 @@
   "description": "Blog backend using Mongodb, express.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon ./functions/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "netlify deploy --prod" 
   },
