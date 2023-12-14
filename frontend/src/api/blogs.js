@@ -1,11 +1,11 @@
 export async function getLatestBlogs() {
-    return fetch('/api/latestblogs', { method: 'get' })
+    return fetch('/.netlify/functions/api/latestblogs', { method: 'get' })
         .then(response => response.json())
         .then(res => res)
 }
 
 export async function getBlogById(id) {
-    return fetch(`/api/blog/${id}`, { method: 'get' })
+    return fetch(`/.netlify/functions/api/blog/${id}`, { method: 'get' })
         .then(res => res.json())
         .then(res => res)
 }
@@ -13,7 +13,7 @@ export async function getBlogById(id) {
 export async function getBlogsPaginated(page, limit, searchKeyword) {
     const searchKey = searchKeyword || '(.*?)'
     console.log(searchKey)
-    return fetch('/api/blogs?' + new URLSearchParams({
+    return fetch('/.netlify/functions/api/blogs?' + new URLSearchParams({
         page: page,
         limit: limit,
         searchKey: searchKey || ''
