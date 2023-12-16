@@ -192,6 +192,10 @@
         align-items: center;
     }
 
+    .website-icon a{
+        margin: 0;
+    }
+
     .web-icon-menu {
         width: 100%;
     }

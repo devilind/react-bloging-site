@@ -15,7 +15,7 @@ function App() {
 
   return (
     
-      <div className="custom-body">
+      <body>
         <div className='linear-gradient-bg'>
           <div className='p-4'>
             <Header />
@@ -35,7 +35,7 @@ function App() {
           </div>
         </div>
 
-      </div>
+      </body>
 
 
   );
