@@ -1,5 +1,4 @@
 .custom-container{
-    /* margin-top: 10px; */
     padding:0 25px ; 
 }
 .custom-navbar {
@@ -7,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    background-color: transparent;
 }
 
 .custom-navbar a {
