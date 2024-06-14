@@ -28,22 +28,19 @@
 
 .p-4{
   background-image: linear-gradient(to bottom right, #22092C, #872341);
-  position: fixed;
+  /* background-color: transparent; */
+  
   top: 0;
   width: 100%;
   z-index: 10;
   
 }
 
-.page-body{
+/* .page-body{
   padding-top: 50px;
-}
+} */
 
-body{
-  padding-top: 50px;
-}
-
-  body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 1em;
     
   }
@@ -78,6 +75,5 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     padding: 0;
   }
-  
 }
 
